@@ -38,8 +38,3 @@ Arquivos gerados pelo Maven, WARs e configurações locais de IDE ficam fora do 
 ## Próximas etapas
 
 A entrega de front-end não conclui sozinha o trabalho integrador. Ainda faltam o CRUD administrativo, o banco com relacionamentos, o aplicativo Flutter e a integração. Os três documentos pedidos pelo professor também precisam ser preparados pelo grupo.
-
-- [Andamento e pendências](docs/estado-do-projeto.md)
-- [Enunciado do professor](docs/enunciado.md)
-
-Academia, contatos e pessoas apresentados no site são fictícios. Houve assistência de IA nesta versão, incluindo as imagens; a revisão do código e sua apresentação ficam a cargo do grupo.
