@@ -50,4 +50,4 @@ O login permite preencher os campos e mostrar a senha, mas ainda não autentica.
 
 ## Mapa
 
-O mapa mostra a região central de São Paulo com imagens do OpenStreetMap, sem marcar a academia fictícia. Precisa de internet e mantém os créditos do provedor. O link abaixo abre a região no Google Maps. Os links sociais levam às plataformas e podem ser substituídos pelos perfis da academia.
+O mapa mostra a região central de São Paulo com imagens do OpenStreetMap, sem marcar a academia fictícia.
