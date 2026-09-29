@@ -2,8 +2,6 @@
 
 Projeto de academia para o Trabalho Integrador de Java Web, Computação Móvel e Banco de Dados.
 
-Esta versão contém o site institucional da PowerFit. A parte de front-end reúne as páginas, os estilos, as imagens, o menu para celular e as interações dos formulários. O banco e o aplicativo Flutter serão integrados nas próximas etapas do grupo.
-
 ## O que já está no repositório
 
 - Site com início, sobre, modalidades, planos, professores, estrutura, avaliações e contato.
@@ -37,4 +35,4 @@ Arquivos gerados pelo Maven, WARs e configurações locais de IDE ficam fora do 
 
 ## Próximas etapas
 
-A entrega de front-end não conclui sozinha o trabalho integrador. Ainda faltam o CRUD administrativo, o banco com relacionamentos, o aplicativo Flutter e a integração. Os três documentos pedidos pelo professor também precisam ser preparados pelo grupo.
+A entrega de front-end não conclui sozinho o trabalho integrador. Ainda falta o banco com relacionamentos, o aplicativo Flutter e a integração.
