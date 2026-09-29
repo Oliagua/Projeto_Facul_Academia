@@ -1,0 +1,25 @@
+/* Imagens explícitas no HTML, sem dependência de fundos ou nth-child. */
+img{max-width:100%}
+.hero-image{min-width:0;padding-bottom:28px}
+img.hero-photo{display:block;width:100%;height:480px;min-height:0;object-fit:cover;object-position:70% center;border-radius:8px}
+.floating-card{left:18px;right:18px;bottom:0;display:grid;grid-template-columns:76px 1fr;column-gap:16px;align-items:center;border-radius:6px}
+.purpose-photo{width:76px;height:76px;object-fit:cover;grid-row:span 2;border-radius:4px}
+.floating-card span{align-self:start}
+.benefits article{padding-top:0;border:0;overflow:hidden}
+.benefit-photo{display:block;width:100%;height:180px;object-fit:cover;border-radius:5px;object-position:center 30%}
+.benefits h3{line-height:1.1}
+.card-photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:5px}
+.modalities article{padding:0 0 24px;overflow:hidden;border-radius:6px}
+.modalities h3,.modalities p,.modalities a{margin-left:20px;margin-right:20px}
+.modalities h3{margin-top:20px}
+img.portrait{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center top;border-radius:5px}
+.trainer-grid h3{line-height:1.12}
+.structure-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}
+.structure-grid figure{margin:0;position:relative;overflow:hidden;border-radius:6px}
+.structure-grid .card-photo{aspect-ratio:3/2}
+.structure-grid figcaption{position:absolute;bottom:0;left:0;right:0;padding:38px 20px 18px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-weight:700;font-size:1rem}
+.testimonials blockquote{padding:24px;margin-top:35px;font-family:'DM Sans',Arial,sans-serif;font-size:1rem;line-height:1.65;border-radius:6px}
+.student-photo{display:block;width:90px;height:90px;object-fit:cover;object-position:center 30%;border-radius:50%;margin-bottom:20px}
+.testimonials blockquote footer{display:block;background:transparent;color:#555;padding:0;margin-top:20px;font-size:.85rem;line-height:1.5}
+@media(max-width:850px){.hero{gap:32px}.trainer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-image{width:100%;max-width:none}}
+@media(max-width:540px){img.hero-photo{height:350px}.floating-card{left:8px;right:8px;padding:12px;grid-template-columns:64px 1fr}.purpose-photo{width:64px;height:64px}.benefit-photo{height:auto;aspect-ratio:3/2}.trainer-grid,.structure-grid{grid-template-columns:1fr}img.portrait{max-height:490px;object-position:center 20%}}

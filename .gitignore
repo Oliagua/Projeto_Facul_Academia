@@ -1,0 +1,26 @@
+# Maven e Java
+**/target/
+*.class
+*.war
+*.ear
+
+# IDEs e arquivos locais
+.vs/
+.vscode/
+.idea/
+*.iml
+**/bin/
+**/obj/
+.classpath
+.project
+.settings/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+
+# Credenciais e registros locais
+.env
+.env.*
+!.env.example
+*.log

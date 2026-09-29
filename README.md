@@ -1,3 +1,13 @@
+## Código do projeto — PowerFit Academia
+
+O módulo Web está em [powerfit-academia](powerfit-academia/), com fontes Java/JSP, imagens, CSS, JavaScript, Maven e script MySQL. Consulte o [guia de execução](powerfit-academia/README.md) para compilar e publicar no Tomcat 9.
+
+**Estado atual:** site institucional e estrutura JDBC inicial. Ainda não é a entrega final do Trabalho Integrador: faltam módulo Flutter, CRUD administrativo persistido, banco com relacionamentos e integração entre módulos. O login e o contato são demonstrativos. A tabela `alunos` é apenas uma base inicial e não satisfaz sozinha o requisito de modelagem final.
+
+Consulte [o acompanhamento dos requisitos](docs/estado-do-projeto.md). `target/`, WARs, classes compiladas e arquivos de IDE não são versionados. O desenvolvimento desta primeira versão contou com assistência de IA; o grupo deve revisar e compreender o código conforme as regras da disciplina.
+
+---
+
 # Projeto_Facul_Academia
 Um projeto semestral da faculdade onde todos os integrantes do grupo irão fazer um desenvolvimento web e mobile com banco de dados em conjunto.
 
@@ -14,7 +24,7 @@ conhecimentos e competências trabalhados nas seguintes disciplinas:
 bancos de dados utilizando SQL;
 • Aplicações Orientadas a Objetos – desenvolvimento de aplicações Web
 utilizando Java, JSP e Servlets.
-  
+
 2. Objetivo do trabalho
 O objetivo deste Trabalho Integrador é desenvolver uma solução computacional
 para apoiar as atividades de um negócio, aplicando de forma integrada os
