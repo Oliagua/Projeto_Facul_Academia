@@ -1,0 +1,78 @@
+:root { --amarelo: #ffb400; --texto: #181818; --fundo: #f4f4f2; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 Arial, sans-serif; color: var(--texto); background: var(--fundo); }
+a { color: inherit; }
+button, input, select { font: inherit; }
+button, a, input, select { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #a66d00; outline-offset: 3px; }
+.cabecalho { display: flex; align-items: center; gap: 28px; padding: 22px 6vw; background: #111; color: #fff; }
+.marca { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 22px; font-weight: 800; line-height: 1.1; }
+.marca > span { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--amarelo); color: #111; font-size: 13px; }
+.marca small { display: block; color: var(--amarelo); font-size: 10px; letter-spacing: 2px; margin-top: 5px; }
+.area { border-left: 1px solid #555; padding-left: 28px; color: #ccc; font-size: 14px; }
+.voltar { margin-left: auto; font-size: 14px; text-underline-offset: 4px; }
+main { max-width: 1240px; margin: auto; padding: 44px 5vw; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { font-size: clamp(32px, 5vw, 44px); margin-bottom: 8px; line-height: 1.1; }
+h2 { font-size: 22px; margin-bottom: 8px; }
+.titulo-pagina { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.titulo-pagina p:not(.etiqueta), .ajuda { color: #606060; }
+.etiqueta { font-size: 11px; font-weight: bold; letter-spacing: 2px; color: #885900; margin-bottom: 10px; }
+.botao { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 10px 18px; border: 1px solid transparent; border-radius: 6px; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.principal { background: var(--amarelo); color: #111; }
+.secundario { background: #fff; border-color: #bbb; color: #222; }
+.perigo { background: #a52222; color: #fff; }
+.aviso-previa { font-size: 13px; background: #fff5d9; border-left: 3px solid var(--amarelo); padding: 12px 16px; margin: 20px 0 28px; }
+.resumo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-bottom: 28px; }
+.resumo article { background: #fff; padding: 20px 24px; border: 1px solid #e4e4e4; border-radius: 8px; }
+.resumo span { color: #666; font-size: 13px; display: block; }
+.resumo strong { display: block; font-size: 32px; margin-top: 6px; }
+.painel { border-radius: 10px; background: #fff; border: 1px solid #e1e1e1; overflow: hidden; }
+.barra-lista { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px; }
+#contagem { color: #666; font-size: 13px; margin: 0; }
+.filtros { display: flex; gap: 14px; }
+label { display: block; font-size: 13px; font-weight: bold; }
+input, select { display: block; width: 100%; min-height: 44px; border: 1px solid #ccc; border-radius: 5px; background: #fff; padding: 10px; margin-top: 7px; color: #222; }
+.filtros input { width: 250px; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th { background: #f7f7f5; color: #555; font-size: 12px; padding: 13px 24px; }
+td { padding: 18px 24px; border-top: 1px solid #eee; font-size: 14px; }
+.nome-aluno { display: block; font-weight: bold; }
+.numero-aluno, .telefone { display: block; font-size: 12px; color: #777; margin-top: 4px; }
+.email { overflow-wrap: anywhere; }
+.plano { display: inline-block; border-radius: 20px; padding: 4px 10px; background: #f1f1ef; font-size: 12px; }
+.plano.anual { background: #fff0bb; color: #755000; }
+.acoes { display: flex; gap: 8px; }
+.acoes button { min-height: 44px; padding: 8px 10px; border: 1px solid #ddd; border-radius: 5px; background: #fff; font-size: 13px; }
+.acoes .excluir { color: #a52222; }
+.resultado { margin: 0; padding: 0 24px; color: #285b32; font-size: 14px; }
+.resultado:not(:empty) { padding-bottom: 18px; }
+.vazio { padding: 40px 24px; text-align: center; color: #666; }
+[hidden] { display: none !important; }
+.rodape { text-align: center; margin-top: 28px; color: #777; font-size: 12px; }
+dialog { width: min(550px, calc(100% - 24px)); max-height: calc(100dvh - 32px); border: 0; border-radius: 12px; padding: 28px; overflow-y: auto; box-shadow: 0 24px 80px #0005; }
+dialog::backdrop { background: #0009; }
+.topo-dialogo { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+.fechar { background: transparent; border: 0; font-size: 25px; width: 44px; height: 44px; flex-shrink: 0; }
+dialog label { margin-bottom: 18px; }
+.ajuda { font-size: 14px; }
+.campos-duplos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+label small { display: block; color: #666; font-size: 11px; font-weight: normal; margin-top: 6px; }
+.acoes-dialogo { display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px; }
+.erro { color: #a52222; font-size: 14px; }
+.somente-leitor, .pular:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.pular:focus { display: block; padding: 12px; background: var(--amarelo); }
+@media (hover: hover) { .principal:hover { background: #ffca40; } .acoes button:hover, .secundario:hover { background: #f5f5f0; } tbody tr:hover { background: #fffdf5; } }
+@media (max-width: 1000px) { .barra-lista { align-items: stretch; flex-direction: column; } .filtros > label:first-child { flex: 1; } .filtros input { width: 100%; } th, td { padding-left: 16px; padding-right: 16px; } }
+@media (max-width: 650px) {
+  .cabecalho { padding: 18px 5vw; gap: 12px; } .area { display: none; } .voltar { font-size: 12px; }
+  main { padding: 30px 5vw; } .titulo-pagina { align-items: stretch; flex-direction: column; gap: 8px; }
+  .resumo { gap: 8px; } .resumo article { padding: 14px 10px; } .resumo strong { font-size: 26px; } .resumo span { font-size: 11px; }
+  .filtros { flex-direction: column; } .barra-lista { padding: 20px; }
+  table, tbody, tr, td { display: block; } thead { display: none; }
+  tr { padding: 18px 20px; border-top: 1px solid #ddd; } td { padding: 5px 0; border: 0; }
+  .acoes { margin-top: 10px; } .acoes button { flex: 1; } .numero-aluno { display: inline; margin-left: 8px; }
+  .nome-aluno { display: inline; font-size: 16px; } .campos-duplos { grid-template-columns: 1fr; gap: 0; }
+  dialog { padding: 22px; } .acoes-dialogo .botao { flex: 1; padding: 10px; }
+}

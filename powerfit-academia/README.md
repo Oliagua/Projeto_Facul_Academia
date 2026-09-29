@@ -63,3 +63,7 @@ O mapa mostra a região central de São Paulo com imagens do OpenStreetMap, sem 
 Mostrar a navegação no computador e em tela pequena, abrir uma modalidade e escolher um plano. No contato, demonstrar um telefone inválido e depois o retorno do Servlet com dados válidos. Explicar a diferença entre a interface pronta e a integração com o banco, que ainda falta.
 
 O [README principal](../README.md) e o [andamento do projeto](../docs/estado-do-projeto.md) separam esta entrega de front-end das próximas etapas do grupo.
+
+## Área administrativa
+
+Abra `http://localhost:8080/powerfit-academia/admin.jsp` ou use o link de prévia na tela de login. A lista tem dados fictícios, busca, filtro por plano e formulários para cadastro, edição e exclusão. As alterações ficam em memória até recarregar a página. Consulte o [guia de integração](../docs/integracao-admin.md) para conectar as telas ao back-end. Os estilos e interações ficam em `css/admin.css` e `js/admin.js`.

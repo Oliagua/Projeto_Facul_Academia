@@ -8,6 +8,7 @@ Esta versão contém o site institucional da PowerFit. A parte de front-end reú
 
 - Site com início, sobre, modalidades, planos, professores, estrutura, avaliações e contato.
 - Tela de login, ainda sem autenticação.
+- Interface administrativa de alunos com busca, filtros, cadastro, edição e exclusão em memória.
 - Layout responsivo e mapa interativo.
 - Validação do contato no navegador e em um Servlet.
 - Classes iniciais para JDBC e script MySQL com a tabela de alunos.

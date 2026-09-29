@@ -10,7 +10,7 @@ A escolha de um plano preenche a mensagem de contato. O Servlet valida o formul�
 
 | Parte | O que falta |
 | --- | --- |
-| Web administrativo | Telas e operações de cadastro, consulta, alteração e exclusão |
+| Web administrativo | Interface de alunos pronta com dados em memória; falta ligar cadastro, consulta, edição e exclusão ao servidor |
 | Banco | Modelagem com mais tabelas e relacionamentos; o SQL atual é apenas inicial |
 | Integração Web | Ligar os formulários administrativos ao DAO e testar a persistência |
 | Mobile | Desenvolver o aplicativo Flutter com uma função própria no negócio |
@@ -30,3 +30,7 @@ A divisão dessas tarefas deve ser combinada pelo grupo. A responsabilidade info
 O teste de celular foi feito ajustando a largura do navegador. Ainda é recomendável conferir em um aparelho físico. Banco e Flutter não foram testados porque não estão integrados nesta versão.
 
 Os requisitos completos estão no [enunciado do professor](enunciado.md).
+
+## Área administrativa de alunos
+
+A prévia em `admin.jsp` permite listar, buscar, filtrar, cadastrar, editar e excluir dados fictícios. As mudanças duram até recarregar a página. O [guia de integração](integracao-admin.md) descreve o que falta ao back-end.

@@ -28,6 +28,7 @@
 <p id="login-msg" class="form-msg" role="status" aria-live="polite">
 </p>
 </form>
+<p class="back-link"><a href="admin.jsp">Conhecer a área administrativa (prévia)</a></p>
 <p class="back-link">
 <a href="index.jsp">← Voltar para o site</a>
 </p>
