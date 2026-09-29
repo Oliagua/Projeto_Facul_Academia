@@ -48,22 +48,6 @@ O login permite preencher os campos e mostrar a senha, mas ainda não autentica.
 2. Ajuste `URL`, `USUARIO` e `SENHA` em `Conexao.java` com os dados do ambiente. A URL inicial é para o banco `powerfit` em `localhost:3306`.
 3. Gere novamente o WAR após alterar essas configurações.
 
-O driver JDBC já está no `pom.xml`. O DAO usa `PreparedStatement` e fecha os recursos com `try-with-resources`, mas não é chamado pelas páginas. O site pode ser executado sem MySQL nesta etapa.
-
-A tabela `alunos` é somente o ponto de partida. O modelo final precisa de tabelas relacionadas, conforme o enunciado. Ao implementar autenticação, armazenar hashes de senha e fazer a verificação adequada; não publicar credenciais reais.
-
-## Imagens e mapa
-
-Para substituir uma foto, altere o arquivo em `imagens/` e sua referência na página. As imagens atuais foram geradas por IA; pessoas, CREFs, preços e contatos são fictícios.
+## Mapa
 
 O mapa mostra a região central de São Paulo com imagens do OpenStreetMap, sem marcar a academia fictícia. Precisa de internet e mantém os créditos do provedor. O link abaixo abre a região no Google Maps. Os links sociais levam às plataformas e podem ser substituídos pelos perfis da academia.
-
-## Para a apresentação
-
-Mostrar a navegação no computador e em tela pequena, abrir uma modalidade e escolher um plano. No contato, demonstrar um telefone inválido e depois o retorno do Servlet com dados válidos. Explicar a diferença entre a interface pronta e a integração com o banco, que ainda falta.
-
-O [README principal](../README.md) e o [andamento do projeto](../docs/estado-do-projeto.md) separam esta entrega de front-end das próximas etapas do grupo.
-
-## Área administrativa
-
-Abra `http://localhost:8080/powerfit-academia/admin.jsp` ou use o link de prévia na tela de login. A lista tem dados fictícios, busca, filtro por plano e formulários para cadastro, edição e exclusão. As alterações ficam em memória até recarregar a página. Consulte o [guia de integração](../docs/integracao-admin.md) para conectar as telas ao back-end. Os estilos e interações ficam em `css/admin.css` e `js/admin.js`.
