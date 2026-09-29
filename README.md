@@ -2,6 +2,7 @@
 Um projeto semestral da faculdade onde todos os integrantes do grupo irão fazer um desenvolvimento web e mobile com banco de dados em conjunto.
 
 Informações da avaliação do projeto:
+
 TRABALHO INTEGRADOR
 Desenvolvimento de Aplicação Web e Mobile para Gestão de um
 Negócio
