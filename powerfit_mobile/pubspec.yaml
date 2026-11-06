@@ -1,0 +1,49 @@
+name: powerfit_mobile
+description: Aplicativo do aluno da PowerFit Academia.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  sqflite: ^2.3.3
+  sqflite_common_ffi_web: ^1.2.0
+  path: ^1.9.0
+  crypto: ^3.0.3
+  shared_preferences: ^2.2.3
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqflite_common_ffi: ^2.3.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/imagens/
+
+  # Mesmas fontes do site (licença SIL Open Font License).
+  fonts:
+    - family: DMSans
+      fonts:
+        - asset: assets/fontes/DMSans-Regular.ttf
+        - asset: assets/fontes/DMSans-Medium.ttf
+          weight: 500
+        - asset: assets/fontes/DMSans-Bold.ttf
+          weight: 700
+    - family: BarlowCondensed
+      fonts:
+        - asset: assets/fontes/BarlowCondensed-SemiBold.ttf
+          weight: 600
+        - asset: assets/fontes/BarlowCondensed-Bold.ttf
+          weight: 700
+        - asset: assets/fontes/BarlowCondensed-ExtraBold.ttf
+          weight: 800
