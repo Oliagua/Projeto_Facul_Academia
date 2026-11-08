@@ -19,15 +19,25 @@ mvn clean package
 - Cadastro: `http://localhost:8080/powerfit-academia/cadastro.jsp`
 - Login: `http://localhost:8080/powerfit-academia/login.jsp`
 
-Os arquivos JSP precisam do Tomcat; não devem ser abertos diretamente como arquivos HTML. O projeto usa `javax.servlet`, por isso a configuração atual é para Tomcat 9, não Tomcat 10 ou superior.
+Os arquivos JSP precisam do Tomcat; não devem ser abertos diretamente como arquivos HTML. O projeto usa `javax.servlet`, por isso a configuração padrão é o Tomcat 9. No Tomcat 10 ou superior o WAR precisa ser convertido; veja "Usar Tomcat 10 ou 11" abaixo.
 
 ## Preparar o MySQL
 
-1. Inicie o MySQL 8 e execute `banco-cadastro.sql` no Workbench ou no terminal. Ele cria o banco `powerfit` e as tabelas `plano` (com os quatro planos) e `usuario`. Pode ser executado mais de uma vez sem apagar dados.
-2. Confira `URL`, `USUARIO` e `SENHA` em `Conexao.java`. A URL inicial é para o banco `powerfit` em `localhost:3306`, com usuário `root` e senha vazia. Ajuste conforme o MySQL do seu ambiente.
+1. Inicie o MySQL 8 e execute `banco-cadastro.sql`. O script cria o banco `powerfit` e as tabelas `plano` (com os quatro planos) e `usuario`, e pode ser executado mais de uma vez sem apagar dados. No Workbench, use File > Open SQL Script e clique no raio; o comando `source` só funciona no cliente de linha de comando.
+2. Confira `URL`, `USUARIO` e `SENHA` em `Conexao.java`. A URL inicial é para o banco `powerfit` em `localhost:3306`, com usuário `root` e senha vazia. Ajuste conforme o MySQL do seu ambiente. Se o root tiver senha e o log mostrar "Public Key Retrieval is not allowed", acrescente `&allowPublicKeyRetrieval=true` no fim da `URL`.
 3. Gere novamente o WAR após alterar essas configurações.
 
 O arquivo `banco-dados.sql` é a estrutura inicial, com a tabela `alunos`. O cadastro e o login não usam essa tabela.
+
+## Usar Tomcat 10 ou 11
+
+O Tomcat 10 e os seguintes usam `jakarta.servlet`, e este projeto usa `javax.servlet`. Para rodar nele sem mudar o código, use a pasta de conversão do próprio Tomcat:
+
+1. Pare o Tomcat e apague `powerfit-academia.war` e a pasta `powerfit-academia` de `webapps`, se existirem.
+2. Crie a pasta `webapps-javaee` dentro da pasta do Tomcat, ao lado de `webapps`, e copie o WAR para ela.
+3. Inicie o Tomcat. Ele converte o aplicativo e cria `powerfit-academia.war` e a pasta `powerfit-academia` em `webapps`.
+
+Testado no Tomcat 11.0.27, com cadastro e login. O Tomcat 11 exige Java 17 ou superior.
 
 ## Cadastro e login
 
