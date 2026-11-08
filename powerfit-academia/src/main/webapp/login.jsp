@@ -28,6 +28,7 @@
 <p id="login-msg" class="form-msg" role="status" aria-live="polite">
 </p>
 </form>
+<p class="back-link">Ainda não tem conta? <a href="cadastro.jsp">Criar conta</a></p>
 <p class="back-link"><a href="admin.jsp">Conhecer a área administrativa (prévia)</a></p>
 <p class="back-link">
 <a href="index.jsp">← Voltar para o site</a>
@@ -36,6 +37,11 @@
 <script src="js/script.js">
 </script>
 <script src="js/melhorias.js">
+</script>
+<script>
+if (new URLSearchParams(location.search).get('cadastro') === 'ok') {
+  document.querySelector('#login-msg').textContent = 'Cadastro concluído! Entre com seu e-mail e senha.';
+}
 </script>
 </body>
 </html>
