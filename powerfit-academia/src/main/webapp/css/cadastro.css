@@ -1,0 +1,21 @@
+/* Ajustes da tela de cadastro, junto com o estilo do login. */
+.login-box select {
+  width: 100%;
+  margin-top: 7px;
+  padding: 11px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  background: #fafafa;
+  font: 400 1rem 'DM Sans', Arial, sans-serif;
+  outline-color: var(--accent);
+}
+#form-cadastro .login-actions { justify-content: flex-start; }
+#form-cadastro .text-button {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #9e6900;
+  font: inherit;
+  cursor: pointer;
+}
+.login-box .back-link { margin-top: 18px; }
