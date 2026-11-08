@@ -15,10 +15,10 @@
 </a>
 <p class="eyebrow">Área do aluno</p>
 <h1>Bem-vindo de volta</h1>
-<form class="login-form" onsubmit="return validarLogin(event)">
-<label>E-mail<input id="login-email" type="email" autocomplete="username" placeholder="voce@email.com" required>
+<form class="login-form" action="${pageContext.request.contextPath}/login" method="post">
+<label>E-mail<input id="login-email" name="email" type="email" autocomplete="username" placeholder="voce@email.com" required>
 </label>
-<label>Senha<input id="login-senha" type="password" autocomplete="current-password" placeholder="Sua senha" required>
+<label>Senha<input id="login-senha" name="senha" type="password" autocomplete="current-password" placeholder="Sua senha" required>
 </label>
 <div class="login-actions">
 <button type="button" id="mostrar-senha" class="text-button">Mostrar senha</button>
@@ -39,8 +39,17 @@
 <script src="js/melhorias.js">
 </script>
 <script>
-if (new URLSearchParams(location.search).get('cadastro') === 'ok') {
-  document.querySelector('#login-msg').textContent = 'Cadastro concluído! Entre com seu e-mail e senha.';
+var params = new URLSearchParams(location.search);
+var avisos = {
+  credenciais: 'E-mail ou senha incorretos.',
+  dados: 'Informe e-mail e senha.',
+  servidor: 'Não foi possível entrar agora. Tente novamente em instantes.'
+};
+var aviso = document.querySelector('#login-msg');
+if (params.get('cadastro') === 'ok') {
+  aviso.textContent = 'Cadastro concluído! Entre com seu e-mail e senha.';
+} else if (avisos[params.get('erro')]) {
+  aviso.textContent = avisos[params.get('erro')];
 }
 </script>
 </body>
